@@ -2,6 +2,7 @@ let numbers = [1, 90, 78, 3, 22, 187, 21]
 let students = [{name:'Albert'},{name:'Bob'},{name:'Claudia'}]
 let mix = [5, 'David', {name:'Ella'}, 23, 'Frank']
 
+
 const logNumbers = (n) => {
 	n.forEach(x => {
 	console.log(x)
@@ -105,3 +106,15 @@ const sortNames = (x) => {
 	return x.sort((a,b) => a.name.length > b.name.length)
 }
 console.log(sortNames(students))
+
+console.log(originalStudents)
+console.log(originalNumbers)
+const studentOutput = (x, y) => {
+	// let output = []
+	// for(let i=0; i < x.length; i++){
+	// 	output = [x.concat(y)]
+	// }
+	// return output
+
+}
+console.log(studentOutput(students,numbers))
