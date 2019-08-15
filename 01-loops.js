@@ -100,3 +100,8 @@ const sortNumbers = (x) => {
 	return x.sort((a, b) => a < b)
 }
 console.log(sortNumbers(numbers))
+
+const sortNames = (x) => {
+	return x.sort((a,b) => a.name.length > b.name.length)
+}
+console.log(sortNames(students))
