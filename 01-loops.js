@@ -75,5 +75,13 @@ console.log(findBob(students))
 const reduceNumbers = (x) => {
 	return x.reduce((t, i) => t + i)
 }
-
 console.log(reduceNumbers(numbers))
+
+const withoutReduce = (x) => {
+	let sum = 0
+	for (let i=0; i < x.length; i++) {
+	 	sum += x[i]
+	}
+	return sum
+}
+console.log(withoutReduce(numbers))
