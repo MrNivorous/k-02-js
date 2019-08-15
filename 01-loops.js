@@ -35,9 +35,17 @@ const mapNames = (name) => {
 mapNames(students)
 
 const filter22 = (num) => {
-	console.log(num.filter(n =>
+	let newFilter = num.filter(n =>
 		n >= 22
 		)
-	)
+	return newFilter
 }
-filter22(newNumbersArray)
+console.log(filter22(newNumbersArray))
+
+const greaterParameter = (array, value) => {
+	let greaterNumbers = array.filter(n =>
+		n > value
+		)
+	return greaterNumbers
+}
+console.log(greaterParameter(numbers, 70))
