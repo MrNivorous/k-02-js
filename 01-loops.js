@@ -95,3 +95,8 @@ const reduceProduct = (x) => {
 	return x.reduce((t, i) => t * i)
 }
 console.log(reduceProduct(numbers))
+
+const sortNumbers = (x) => {
+	return x.sort((a, b) => a < b)
+}
+console.log(sortNumbers(numbers))
