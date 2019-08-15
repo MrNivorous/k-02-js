@@ -26,3 +26,11 @@ const add1 = (n) => {
 }
 
 add1(numbers)
+
+const mapNames = (name) => {
+	console.log(name.map(n => {
+		return n.name})
+	)
+}
+
+mapNames(students)
