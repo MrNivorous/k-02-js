@@ -19,18 +19,25 @@ const logNames = (names) => {
 logNames(students)
 
 const add1 = (n) => {
-	console.log(n.map(x => {
-	return x + 1
-		})
-	)
+	let newNumbers = n.map(n =>
+	    n + 1)
+	 return newNumbers
 }
 
-add1(numbers)
+let newNumbersArray = add1(numbers)
+console.log(newNumbersArray)
 
 const mapNames = (name) => {
 	console.log(name.map(n => {
 		return n.name})
 	)
 }
-
 mapNames(students)
+
+const filter22 = (num) => {
+	console.log(num.filter(n =>
+		n >= 22
+		)
+	)
+}
+filter22(newNumbersArray)
