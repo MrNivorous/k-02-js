@@ -85,3 +85,13 @@ const withoutReduce = (x) => {
 	return sum
 }
 console.log(withoutReduce(numbers))
+
+const reduceDifference = (x) => {
+	return x.reduce((t, i) => t - i)
+}
+console.log(reduceDifference(numbers))
+
+const reduceProduct = (x) => {
+	return x.reduce((t, i) => t * i)
+}
+console.log(reduceProduct(numbers))
