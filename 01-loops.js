@@ -49,3 +49,8 @@ const greaterParameter = (array, value) => {
 	return greaterNumbers
 }
 console.log(greaterParameter(numbers, 70))
+
+const filterName = (x) => {
+ return	x.filter(n => n.name.length > 6 )
+}
+console.log(filterName(students))
