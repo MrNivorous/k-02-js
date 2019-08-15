@@ -60,3 +60,8 @@ const filterStrings = (x) => {
 	return stringTypes
 }
 console.log(filterStrings(mix))
+
+const find100 = (x) => {
+	return x.find(n => n > 100)
+}
+console.log(find100(numbers))
