@@ -54,3 +54,9 @@ const filterName = (x) => {
  return	x.filter(n => n.name.length > 6 )
 }
 console.log(filterName(students))
+
+const filterStrings = (x) => {
+	let stringTypes = x.filter(n => typeof n === 'string')
+	return stringTypes
+}
+console.log(filterStrings(mix))
