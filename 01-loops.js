@@ -9,9 +9,9 @@ const logNumbers = (n) => {
 
 logNumbers(numbers)
 
-// const logNames = () => {
-// 	students.forEach(n => {
-// 	console.log(n)
-// })}
-//
-// logNames()
+const logNames = (names) => {
+	names.forEach(n => {
+	console.log(n.name)
+})}
+
+logNames(students)
