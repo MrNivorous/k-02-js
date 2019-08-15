@@ -65,3 +65,9 @@ const find100 = (x) => {
 	return x.find(n => n > 100)
 }
 console.log(find100(numbers))
+
+
+const findBob = (x) => {
+	return x.find(n => n.name === 'Bob')
+}
+console.log(findBob(students))
