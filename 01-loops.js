@@ -71,3 +71,9 @@ const findBob = (x) => {
 	return x.find(n => n.name === 'Bob')
 }
 console.log(findBob(students))
+
+const reduceNumbers = (x) => {
+	return x.reduce((t, i) => t + i)
+}
+
+console.log(reduceNumbers(numbers))
