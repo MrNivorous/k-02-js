@@ -29,11 +29,10 @@ let newNumbersArray = add1(numbers)
 console.log(newNumbersArray)
 
 const mapNames = (name) => {
-	console.log(name.map(n => {
-		return n.name})
+		return name.map(n => n.name
 	)
 }
-mapNames(students)
+console.log(mapNames(students))
 
 const filter22 = (num) => {
 	let newFilter = num.filter(n =>
@@ -107,14 +106,14 @@ const sortNames = (x) => {
 }
 console.log(sortNames(students))
 
-console.log(originalStudents)
-console.log(originalNumbers)
-const studentOutput = (x, y) => {
-	// let output = []
-	// for(let i=0; i < x.length; i++){
-	// 	output = [x.concat(y)]
-	// }
-	// return output
-
-}
-console.log(studentOutput(students,numbers))
+// console.log(originalStudents)
+// console.log(originalNumbers)
+// const studentOutput = (x, y) => {
+// 	let output = []
+// 	for(let i=0; i < y < 3; i++){
+// 		output = x[i].concat(y[i])
+// 	}
+// 	return output
+//
+// }
+// console.log(studentOutput(students,numbers))
