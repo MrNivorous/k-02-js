@@ -105,15 +105,3 @@ const sortNames = (x) => {
 	return x.sort((a,b) => a.name.length > b.name.length)
 }
 console.log(sortNames(students))
-
-// console.log(originalStudents)
-// console.log(originalNumbers)
-// const studentOutput = (x, y) => {
-// 	let output = []
-// 	for(let i=0; i < y < 3; i++){
-// 		output = x[i].concat(y[i])
-// 	}
-// 	return output
-//
-// }
-// console.log(studentOutput(students,numbers))
