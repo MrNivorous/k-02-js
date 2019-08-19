@@ -21,11 +21,6 @@ console.log(reverseWords(phrase))
 // 20303
 
 const palindromes = (word) => {
-	// for (var i = 0; i < word.length; i++) {
-	// if (word === word.reverse()) {
-	// 	return word
-	// }
-	// }
 	let newArray = word.filter(n => {
 		if (n === n.split('').reverse().join('')) {
 			return n
@@ -33,5 +28,26 @@ const palindromes = (word) => {
 	})
 	return newArray
 	}
-
 console.log(palindromes(names))
+
+// 20304
+
+
+
+// 20305
+const fizzBuzz = () => {
+	for (var i=1; i < 21; i++){
+    if (i % 15 == 0) console.log("FizzBuzz");
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
+	}
+}
+
+fizzBuzz()
+
+// 20306
+
+const a = (number1, number2) => {
+	return number1 + number 2
+}
