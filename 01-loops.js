@@ -105,3 +105,21 @@ const sortNames = (x) => {
 	return x.sort((a,b) => a.name.length > b.name.length)
 }
 console.log(sortNames(students))
+
+
+//020119
+
+dens = [10, 5, 1, 0.5, 0.2, 0.1, 0.05, 0.01]
+
+let denominationFunction = (arr, num) => {
+	let total = num
+	let newArray = []
+	arr.forEach((e,i) => {
+		while (num >= arr[i]) {
+		newArray.push(arr[i])
+		num = Number(num -= arr[i]).toFixed(2)
+	}
+	})
+	return newArray
+	}
+	console.log(denominationFunction(dens,27.58))

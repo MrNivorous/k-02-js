@@ -32,6 +32,19 @@ console.log(palindromes(names))
 
 // 20304
 
+const getRomans = (x, arr) => {
+	let output = ''
+	let i = 0
+	while (i < arr.length){
+		if (x >= arr[i].v) {
+			x -= arr[i].v
+			output += arr[i].s
+		} else {
+			i++
+		}
+	}
+	return output
+}
 
 
 // 20305
@@ -51,3 +64,5 @@ fizzBuzz()
 const a = (number1, number2) => {
 	return number1 + number 2
 }
+
+const b = (function1(param1,param2),number1, number2,number3 )
