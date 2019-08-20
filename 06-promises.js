@@ -89,7 +89,7 @@ let Jackpot = () => {
 
 let Red = () => {
 	return new Promise((resolve, reject) => {
-		return setTimeout(() => {resolve('Red')}, Math.random() * 4000)
+		return setTimeout(() => {resolve('Red')}, (Math.random() * 3000) + 1000)
 	})
 }
 
