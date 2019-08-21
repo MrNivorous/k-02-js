@@ -77,15 +77,16 @@ Promise.all([makeCoffee(), makeEggs(), makeToast(), makeBacon()]).then(res => co
 
 let Speedy = () => {
 	return new Promise((resolve, reject) => {
-		return setTimeout(() => {resolve('Speedy')}, Math.random() * 4000)
+		return setTimeout(() => {resolve('Speedy')}, (Math.random() * 3000) + 1000)
 	})
 }
 
 let Jackpot = () => {
 	return new Promise((resolve, reject) => {
-		return setTimeout(() => {resolve('Jackpot')}, Math.random() * 4000)
+		return setTimeout(() => {resolve('Jackpot')}, (Math.random() * 3000) + 1000)
 	})
 }
+
 
 let Red = () => {
 	return new Promise((resolve, reject) => {

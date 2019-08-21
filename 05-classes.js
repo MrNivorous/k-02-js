@@ -94,19 +94,26 @@ class Product {
 	}
 }
 
-// class Receipt {
-// 	constructor(products) {
-// 		this.products = products
-// 	}
-// 	calcTotal(products) {
-// 		return products.reduce((n, i) => n + i, 0)
-// 	}
-// }
-
-let getReceipt = (fruits, prices, discounts) => {
-	let newProducts =  new Product(fruits, prices)
-	return newProducts.applyDiscount(discounts)
-
+class Receipt {
+	constructor(products) {
+		this.products = products
+	}
+	calcTotal(products) {
+	for (p in products) {
+		console.log(`${products[p]}`)
+	}
+	}
 }
 
-console.log(getReceipt(fruits, prices, discounts))
+let getReceipt = (fruits, prices, discounts) => {
+	let products =  new Product(fruits, prices)
+	newArray = products.applyDiscount(discounts)
+	console.log(newArray)
+	let receipt = new Receipt(newArray)
+	console.log(receipt)
+	receipt.calcTotal(products)
+	//console.log(receipt.calcTotal(products))
+}
+
+getReceipt(fruits,prices,discounts)
+//console.log(getReceipt(fruits, prices, discounts))
