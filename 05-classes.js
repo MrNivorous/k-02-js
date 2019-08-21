@@ -98,10 +98,13 @@ class Receipt {
 	constructor(products) {
 		this.products = products
 	}
-	calcTotal(products) {
-	for (p in products) {
-		console.log(`${products[p]}`)
-	}
+	calcTotal() {
+		return this.products.map(e => {
+			return e.price
+		}).reduce((e, i) => {
+			return e + i
+		})
+
 	}
 }
 
@@ -110,8 +113,8 @@ let getReceipt = (fruits, prices, discounts) => {
 	newArray = products.applyDiscount(discounts)
 	console.log(newArray)
 	let receipt = new Receipt(newArray)
-	console.log(receipt)
-	receipt.calcTotal(products)
+//	console.log(JSON.stringify(receipt, false, 2))
+	console.log(receipt.calcTotal())
 	//console.log(receipt.calcTotal(products))
 }
 
