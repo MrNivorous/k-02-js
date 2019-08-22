@@ -126,12 +126,8 @@ console.log(sortNames(students))
 //020117
 
 const mappedNames = (arr1, arr2) => {
-
-let result = [];
-	for(let i = 0; i < arr1.length; i++) {
-	    result.push(arr1[i] , arr2[i])
-	}
-return result
+	let newMap = arr1.map((e, i) => ({name:e.name, age:arr2[i]}))
+	return newMap
 }
 
 // let newArray = arr1.map((x, i) => {
@@ -141,6 +137,15 @@ return result
 console.log(mappedNames(students, newNumbers))
 
 //020118
+
+let arr = [1, 2, 3, 4, 5, 7, 8, 9, 10]
+let number = []
+for (let i = 0; i < arr.length; i++) {
+    if ((arr[i+1] - arr[i]) > 1 ) {
+        number.push(arr[i+1]-1)
+    }
+}
+console.log(number)
 
 //020119
 
