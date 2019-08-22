@@ -9,14 +9,15 @@ const reverseWords = (words) => {
 }
 console.log(reverseWords(phrase))
 
-// 20302
+//20302
 
-// const convertPrices = (array) => {
-// 	for (let i = 0; i <= array.length; i++) {
-// 		return i.slice(0,1)
-// 	}
-// }
-// console.log(convertPrices(prices))
+const convertPrices = (array) => {
+	let currencies = array.map(x => x[0])
+	let prices = array.map(x => x.slice(1))
+	let numbers = prices.map(Number)
+	return currencies.map((e, i) => [{currency: e, value: numbers[i]}])
+}
+console.log(convertPrices(prices))
 
 // 20303
 
@@ -59,7 +60,7 @@ const fizzBuzz = () => {
 
 fizzBuzz()
 
-// 20306
+//20306
 
 const a = (number1, number2) => {
 	return number1 + number 2
