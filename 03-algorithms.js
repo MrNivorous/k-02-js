@@ -62,8 +62,8 @@ fizzBuzz()
 
 //20306
 
-const a = (number1, number2) => {
-	return number1 + number 2
-}
-
-const b = (function1(param1,param2),number1, number2,number3 )
+// const a = (number1, number2) => {
+// 	return number1 + number 2
+// }
+//
+// const b = (function1(param1,param2),number1, number2,number3 )
